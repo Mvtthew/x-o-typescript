@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>XO</title>
+	</head>
+	<body>
+		<div class="plansza">
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+			<button></button>
+		</div>
+
+		<div class="game-over"></div>
+
+		<style>
+			.plansza {
+				width: 700px;
+				margin: auto;
+				margin-top: 10rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			button {
+				width: calc(700px / 3 - 2rem);
+				height: 200px;
+				margin: 1rem;
+			}
+			.game-over {
+				display: none;
+				position: fixed;
+				z-index: 50;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100vh;
+				align-items: center;
+				justify-content: center;
+				background-color: #000000a0;
+				color: white;
+				font-size: 4rem;
+			}
+			.game-over.show {
+				display: flex;
+			}
+		</style>
+	</body>
+	<script src="./dist/index.js" defer></script>
+</html>
